@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @media all and (max-width: 1600px) and (min-width: 1025px) {
+        #nav {
+          width: 800px;
+          margin: auto;
+        }
+        #nav > h1 {
+          padding: 10px 800px 10px 10px;
+          background-color: yellow;
+        }
+        #boxes {
+          display: flex;
+          margin-left: 33.5%;
+        }
+        #boxes > div {
+          padding: 70px;
+          margin-left: 10px;
+        }
+      }
+      @media all and (max-width: 1024px) and (min-width: 769px) {
+        #nav {
+          width: 800px;
+          margin: auto;
+        }
+        #nav > h1 {
+          padding: 10px 800px 10px 10px;
+          background-color: yellow;
+        }
+        #boxes {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+        }
+      }
+      @media all and (max-width: 768px) and (min-width: 481px) {
+        #nav > h1 {
+          width: auto;
+          padding: 10px 800px 10px 10px;
+          background-color: yellow;
+        }
+        #boxes {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 20px;
+          margin: auto;
+        }
+        #boxes > div {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav">
+      <h1>NAVIGATION</h1>
+    </div>
+    <div id="boxes">
+      <div style="background-color: red">
+        <p>Box 1</p>
+      </div>
+      <div style="background-color: rgb(73, 204, 73)">
+        <p>Box 2</p>
+      </div>
+      <div style="background-color: rgb(98, 98, 240)">
+        <p>Box 3</p>
+      </div>
+      <div style="background-color: rgb(135, 132, 132)">
+        <p>Box 4</p>
+      </div>
+    </div>
+  </body>
+</html>
